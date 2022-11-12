@@ -1,28 +1,9 @@
 ---
-import '../styles/global.css';
-import Header from '../components/Header.astro'; '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Home Page";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Header />
-		
-		<h1>Hello to my Astro Blog!</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minus delectus tempora dignissimos dolore exercitationem aut officia laborum dolores vel. Inventore modi ut in eaque. Veniam molestiae ipsa magnam perspiciatis.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium obcaecati ipsum velit sunt distinctio impedit eligendi sint odit libero delectus, animi maxime, quidem fugit odio reiciendis quis maiores, voluptates accusamus?</p>
-		<Footer />
-		<script>
-			import "../scripts/menu.js";
-		</script>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>My awesome blog subtitle</h2>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur temporibus nisi cum laboriosam vel optio facere corrupti dolor, nihil, praesentium, itaque fugit eius assumenda doloremque officia reiciendis similique quas provident.</p>
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut molestiae perspiciatis et tenetur libero recusandae id provident repellat repudiandae molestias soluta, modi suscipit fuga mollitia voluptatibus quis? Placeat, hic deserunt?</p>
+</BaseLayout>
