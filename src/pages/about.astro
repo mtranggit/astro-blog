@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const pageTitle = 'About Me';
@@ -44,7 +44,7 @@ const textCase = "uppercase"
     </style>
 	</head>
 	<body>
-    <Navigation />
+    <Header />
 		<h1>About me</h1>
     <h2>... and my new site built with Astro</h2>
     <p>I am working throught the Astro's introductory tutorial.</p>
@@ -65,7 +65,10 @@ const textCase = "uppercase"
     {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not {goal} days.</p>}
 
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere atque nisi ab quos, quibusdam exercitationem veniam expedita eligendi qui eius accusantium dolore perspiciatis nihil labore praesentium beatae dolorem! Minima, distinctio.</p>
-    
+
     <Footer />
+    <script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
