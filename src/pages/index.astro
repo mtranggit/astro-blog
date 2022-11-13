@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/preact/Greeting";
 const pageTitle = "Home Page";
 ---
 <BaseLayout pageTitle={pageTitle}>
 	<h2>My awesome blog subtitle</h2>
+	<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there","Good day","Hi there","Hej", "Hallo", "Hola", "Habari", "Bonjour"]} />
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur temporibus nisi cum laboriosam vel optio facere corrupti dolor, nihil, praesentium, itaque fugit eius assumenda doloremque officia reiciendis similique quas provident.</p>
 	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut molestiae perspiciatis et tenetur libero recusandae id provident repellat repudiandae molestias soluta, modi suscipit fuga mollitia voluptatibus quis? Placeat, hic deserunt?</p>
 </BaseLayout>
